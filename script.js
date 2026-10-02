@@ -90,3 +90,15 @@ function showTeddyPopper() {
     }, 3500);
   }
 }
+// TEDDY POPPER CONFETTI
+const teddyPopper = document.getElementById("teddyPopper");
+
+if (teddyPopper) {
+  teddyPopper.addEventListener("click", () => {
+    teddyPopper.classList.add("pop");
+
+    setTimeout(() => {
+      teddyPopper.classList.remove("pop");
+    }, 1200);
+  });
+}
