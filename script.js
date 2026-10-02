@@ -27,6 +27,7 @@ seal.addEventListener("click", () => {
     opening.classList.add("opened");
     website.classList.add("visible");
     document.body.style.overflow = "auto";
+    showTeddyPopper();
   }, 650);
 
 });
