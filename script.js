@@ -27,7 +27,6 @@ seal.addEventListener("click", () => {
     opening.classList.add("opened");
     website.classList.add("visible");
     document.body.style.overflow = "auto";
-    showTeddyPopper();
   }, 650);
 
 });
@@ -89,16 +88,4 @@ function showTeddyPopper() {
       teddyPopper.classList.remove("show");
     }, 3500);
   }
-}
-// TEDDY POPPER CONFETTI
-const teddyPopper = document.getElementById("teddyPopper");
-
-if (teddyPopper) {
-  teddyPopper.addEventListener("click", () => {
-    teddyPopper.classList.add("pop");
-
-    setTimeout(() => {
-      teddyPopper.classList.remove("pop");
-    }, 1200);
-  });
 }
