@@ -1259,3 +1259,106 @@ button {
     font-size: 15px;
   }
 }
+/* ===== BEST BOYFRIEND CERTIFICATE ===== */
+
+.award-section {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.award-card {
+  position: relative;
+  width: min(850px, 92%);
+  padding: 55px 60px;
+  text-align: center;
+  background: #fffaf2;
+  border: 10px double #b08d57;
+  box-shadow: 0 12px 35px rgba(70, 35, 20, 0.18);
+  box-sizing: border-box;
+}
+
+/* Inner certificate border */
+.award-card::before {
+  content: "";
+  position: absolute;
+  inset: 15px;
+  border: 1px solid #c9a96e;
+  pointer-events: none;
+}
+
+/* Small decorative corners */
+.award-card::after {
+  content: "✦";
+  position: absolute;
+  top: 22px;
+  left: 28px;
+  font-size: 24px;
+  color: #b08d57;
+}
+
+.certificate-title {
+  margin: 0 0 18px;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  letter-spacing: 5px;
+  color: #8b6b3f;
+  font-weight: bold;
+}
+
+.award-card h2 {
+  margin: 10px auto 18px;
+  max-width: 700px;
+  font-family: Georgia, serif;
+  font-size: clamp(24px, 4vw, 38px);
+  line-height: 1.25;
+  color: #5b2636;
+  font-weight: 700;
+}
+
+.award-divider {
+  margin: 18px 0 28px;
+  color: #b08d57;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.award-message {
+  max-width: 680px;
+  margin: 0 auto 20px;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #4b3a35;
+}
+
+.award-happy {
+  margin-top: 30px;
+  font-family: Georgia, serif;
+  font-size: 22px;
+  font-weight: bold;
+  font-style: italic;
+  color: #8b3d50;
+}
+
+.award-signature {
+  margin-top: 18px;
+  font-family: cursive;
+  font-size: 15px;
+  color: #72554d;
+}
+
+/* Certificate seal */
+.award-card .award-seal {
+  margin: 25px auto 0;
+  width: 65px;
+  height: 65px;
+  border: 2px solid #b08d57;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b08d57;
+  font-size: 25px;
+}
