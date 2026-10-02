@@ -1259,43 +1259,194 @@ button {
     font-size: 15px;
   }
 }
-/* 🧸 Cute Teddy + Party Popper */
+/* CUTE CHUBBY WHITE TEDDY */
+
 .teddy-popper {
-  position: fixed;
-  right: 8%;
-  bottom: 12%;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  z-index: 999;
-  animation: teddyFloat 2.5s ease-in-out infinite;
+  position: relative;
+  width: 220px;
+  height: 230px;
+  margin: 30px auto;
 }
 
 .teddy {
-  font-size: 90px;
-  filter: drop-shadow(0 4px 5px rgba(0,0,0,0.15));
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+  width: 150px;
+  height: 190px;
+}
+
+.teddy-head {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  width: 110px;
+  height: 100px;
+  background: #fff;
+  border: 3px solid #eadfd8;
+  border-radius: 48% 48% 45% 45%;
+  z-index: 3;
+}
+
+.ear {
+  position: absolute;
+  top: 10px;
+  width: 38px;
+  height: 38px;
+  background: #fff;
+  border: 3px solid #eadfd8;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left-ear {
+  left: 10px;
+}
+
+.right-ear {
+  right: 10px;
+}
+
+.eye {
+  position: absolute;
+  top: 38px;
+  width: 9px;
+  height: 9px;
+  background: #333;
+  border-radius: 50%;
+}
+
+.left-eye {
+  left: 30px;
+}
+
+.right-eye {
+  right: 30px;
+}
+
+.muzzle {
+  position: absolute;
+  left: 32px;
+  top: 53px;
+  width: 46px;
+  height: 35px;
+  background: #f8eee8;
+  border-radius: 50%;
+}
+
+.nose {
+  position: absolute;
+  top: 8px;
+  left: 18px;
+  width: 11px;
+  height: 8px;
+  background: #555;
+  border-radius: 50%;
+}
+
+.mouth {
+  position: absolute;
+  top: 16px;
+  left: 21px;
+  width: 5px;
+  height: 8px;
+  border-left: 2px solid #555;
+  border-bottom: 2px solid #555;
+  transform: rotate(-45deg);
+}
+
+.body {
+  position: absolute;
+  bottom: 15px;
+  left: 5px;
+  width: 140px;
+  height: 115px;
+  background: #fff;
+  border: 3px solid #eadfd8;
+  border-radius: 48% 48% 42% 42%;
+  z-index: 2;
+}
+
+.belly {
+  position: absolute;
+  left: 38px;
+  top: 25px;
+  width: 65px;
+  height: 70px;
+  background: #faf4ef;
+  border-radius: 50%;
+}
+
+.arm {
+  position: absolute;
+  top: 25px;
+  width: 35px;
+  height: 70px;
+  background: #fff;
+  border: 3px solid #eadfd8;
+  border-radius: 50%;
+}
+
+.left-arm {
+  left: -18px;
+  transform: rotate(25deg);
+}
+
+.right-arm {
+  right: -18px;
+  transform: rotate(-25deg);
+}
+
+.leg {
+  position: absolute;
+  bottom: -15px;
+  width: 55px;
+  height: 45px;
+  background: #fff;
+  border: 3px solid #eadfd8;
+  border-radius: 50%;
+}
+
+.left-leg {
+  left: 8px;
+  transform: rotate(-15deg);
+}
+
+.right-leg {
+  right: 8px;
+  transform: rotate(15deg);
 }
 
 .popper {
-  font-size: 38px;
-  transform: rotate(-20deg);
-  animation: popperWiggle 1.2s ease-in-out infinite;
+  position: absolute;
+  right: 0;
+  bottom: 45px;
+  width: 45px;
+  height: 70px;
 }
 
-@keyframes teddyFloat {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-8px);
-  }
+.popper-body {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  width: 28px;
+  height: 50px;
+  background: linear-gradient(135deg, #f6c453, #e99b35);
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%);
+  transform: rotate(-18deg);
 }
 
-@keyframes popperWiggle {
-  0%, 100% {
-    transform: rotate(-20deg);
-  }
-  50% {
-    transform: rotate(5deg);
-  }
+.confetti {
+  position: absolute;
+  top: -15px;
+  left: -25px;
+  width: 90px;
+  height: 70px;
+}
+
+.confetti::before {
+  content: "✦  •  ✧  •  ✦";
+  position: absolute;
+  font-size: 22px;
+  letter-spacing: 5px;
 }
