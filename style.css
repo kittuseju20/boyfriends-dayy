@@ -1259,3 +1259,43 @@ button {
     font-size: 15px;
   }
 }
+/* 🧸 Cute Teddy + Party Popper */
+.teddy-popper {
+  position: fixed;
+  right: 8%;
+  bottom: 12%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 999;
+  animation: teddyFloat 2.5s ease-in-out infinite;
+}
+
+.teddy {
+  font-size: 90px;
+  filter: drop-shadow(0 4px 5px rgba(0,0,0,0.15));
+}
+
+.popper {
+  font-size: 38px;
+  transform: rotate(-20deg);
+  animation: popperWiggle 1.2s ease-in-out infinite;
+}
+
+@keyframes teddyFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes popperWiggle {
+  0%, 100% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}
