@@ -1450,3 +1450,65 @@ button {
   font-size: 22px;
   letter-spacing: 5px;
 }
+/* TEDDY POP + CONFETTI ANIMATION */
+
+.teddy-popper {
+  transition: transform 0.25s ease;
+}
+
+.teddy-popper.pop {
+  animation: teddyBounce 0.55s ease;
+}
+
+@keyframes teddyBounce {
+  0%   { transform: scale(1); }
+  45%  { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+.teddy-popper.pop .popper-body {
+  animation: popperBlast 0.45s ease;
+}
+
+@keyframes popperBlast {
+  0%   { transform: rotate(-18deg) scale(1); }
+  45%  { transform: rotate(-18deg) scale(1.25); }
+  100% { transform: rotate(-18deg) scale(1); }
+}
+
+/* CONFETTI BURST */
+
+.teddy-popper.pop .confetti::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 12px;
+  background: #ff6b81;
+  border-radius: 2px;
+
+  box-shadow:
+    -35px -20px #ffd166,
+    -18px -42px #6ecbff,
+    5px -55px #ff6b81,
+    25px -38px #9b8cff,
+    45px -20px #6edc8c,
+    -48px 5px #ffb347,
+    -28px 25px #6ecbff,
+    0px 35px #ff6b81,
+    28px 22px #ffd166,
+    50px 5px #9b8cff;
+
+  animation: confettiRain 1.2s ease-out forwards;
+}
+
+@keyframes confettiRain {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0, 115px) rotate(220deg);
+    opacity: 0;
+  }
+}
