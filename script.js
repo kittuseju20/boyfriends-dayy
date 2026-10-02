@@ -76,3 +76,16 @@ song.addEventListener("ended", () => {
 ========================= */
 
 document.body.style.overflow = "hidden";
+
+// 🧸 Teddy Popper effect
+const teddyPopper = document.getElementById("teddyPopper");
+
+function showTeddyPopper() {
+  if (teddyPopper) {
+    teddyPopper.classList.add("show");
+
+    setTimeout(() => {
+      teddyPopper.classList.remove("show");
+    }, 3500);
+  }
+}
